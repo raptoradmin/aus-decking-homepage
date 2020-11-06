@@ -74,7 +74,7 @@ var elems = [{
 
 function scrollspy() {
 	elems.forEach(function(el){
-		if($(el.tgt).position().top < $(window).scrollTop()+$(window).height() && !el.anime.began) {
+		if($(el.tgt).position().top < $(window).scrollTop()+$(window).height()*0.8 && !el.anime.began) {
 			el.anime.play()
 		}
 	})
