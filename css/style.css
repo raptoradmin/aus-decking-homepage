@@ -27,7 +27,26 @@ p {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	margin-top: 45vh;
+	background:rgba(33,33,33,0.5);
+	padding-top: 45vh;
+}
+.carousel-overlay h1 {
+	font-family: 'Russo One';
+	font-size: 72px;
+}
+.carousel-overlay hr {
+	display: inline-block;
+	width: 100px;
+	height: 3px;
+	background: #33A1EA;
+}
+.carousel-overlay p {
+	font-family: 'Cabin';
+	font-weight: 500;
+	font-size: 20px;
+	font-style: italic;
+	max-width: 500px;
+	display: inline-block;
 }
 .parallax-window {
 	background: transparent;
