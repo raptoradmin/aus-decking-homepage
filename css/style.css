@@ -37,9 +37,7 @@ a, p {
 	padding-top: 40vh;
 }
 .carousel-overlay h1 {
-	/*font-family: 'Russo One';*/
 	font-size: 56px;
-	/*text-shadow: 0px 5px 10px #000;*/
 }
 .carousel-overlay hr {
 	display: inline-block;
@@ -81,11 +79,7 @@ hr.short {
 .card-hover {
 	transition: all 200ms cubic-bezier(0,0,0.3,1);
 }
-.card-hover:hover {
-	transform: scale(1.05) skewY(2.5deg) translateY(8px);
-	box-shadow: 6px 0px 15px -3px;
-	cursor: pointer;
-}
+
 
 .card-smbg {
 	width: 600px;
@@ -144,6 +138,12 @@ hr.short {
 @media only screen and (min-width: 600px) {
 .carousel-overlay h1 { font-size: 94px }
 .carousel-overlay p { font-size: 26px }
+
+.card-hover:hover {
+	transform: scale(1.05) translateY(8px);
+	box-shadow: 0px 0px 15px -3px;
+	cursor: pointer;
+}
 
 .card-smbg:hover {
 	cursor: pointer;
