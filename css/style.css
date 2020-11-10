@@ -5,9 +5,25 @@ a, p {
 	font-family: 'Roboto';
 	font-weight: 300 !important;
 }
+a {
+	color: #33A1EA;
+}
+.text-primary {
+	color: #33A1EA !important;
+}
 .text-impact {
 	font-family: 'Russo One';
 	text-shadow: 0px 5px 10px #000;
+}
+.text-synopsis {
+	max-width: 800px;
+	margin: auto;
+	font-size: 18px;
+}
+
+.btn-primary {
+	background-color: #33A1EA;
+	border-color: #33A1EA;
 }
 
 #sect-nav {
@@ -82,7 +98,6 @@ hr.short {
 
 
 .card-smbg {
-	width: 600px;
 	margin: 10px auto;
 	border: 1px solid #ddd;
 	overflow: auto;
@@ -90,12 +105,15 @@ hr.short {
 	box-shadow: 0px 0px 10px -5px;
 	overflow: hidden;
 }
+#sect-smbg .card-smbg {
+	width: 600px;
+}
 .card-smbg-img {
 	position: relative;
 	float: left;
 	height: 100px;
 	width: 100px;
-	padding: 25px;
+	padding: 20px;
 	background-color: #33A1EA;
 	border: 3px solid #33A1EA;
 	border-radius: 50%;
@@ -103,7 +121,8 @@ hr.short {
 }
 .card-smbg-img > svg {
 	height: 100%;
-	color: #fff;
+	width: 100%;
+	fill: #fff;
 }
 .card-smbg-img > span {
 	position: absolute;
@@ -125,6 +144,16 @@ hr.short {
 .card-smbg-text > * {
 	margin: 0 20px;
 	vertical-align: middle;
+}
+
+.parallax-card svg {
+	color: #33A1EA;
+	margin-bottom: 10px;
+	width: 40px;
+	height: 40px;
+}
+.parallax-card > .back {
+	background: linear-gradient(30deg, #eee 0%, #cedce7 100%);
 }
 
 [class*="fade-"] {
@@ -155,9 +184,15 @@ hr.short {
 	font-size: 48px;
 	transform: translateY(-50%) rotate(360deg);
 }
+
+.card-smbg.stagger:nth-child(1) { margin-right: 50px }
+.card-smbg.stagger:nth-child(2) { margin-left: 25px; margin-right: 25px }
+.card-smbg.stagger:nth-child(3) { margin-left: 50px }
+
 }
 
 /* Mobile only styles */
 @media only screen and (max-width: 600px) {
 .card-smbg { width: 100% }
+.card-smbg p { font-size: 14px }
 }

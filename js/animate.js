@@ -27,12 +27,14 @@ var anime_overlay = anime({
 	easing: 'spring(1, 80, 12, 1)'
 })
 
-// var anime_service = anime({
-// 	targets: '#sect-service',
-// 	translateY: ['40vh', 0],
-// 	easing: 'spring(1, 80, 12, 1)',
-// 	autoplay: false
-// })
+var anime_summary = anime({
+	targets: '#sect-summary .fade-rt',
+	translateX: ['-100px', 0],
+	opacity: 1,
+	delay: anime.stagger(120),
+	easing: 'spring(1, 80, 12, 1)',
+	autoplay: false
+})
 
 var anime_partners = anime({
 	targets: '#sect-partners .fade-up',
@@ -50,6 +52,14 @@ var anime_products = anime({
 	autoplay: false
 })
 
+var anime_projects = anime({
+	targets: '#sect-projects .fade-up',
+	top: 0,
+	opacity: 1,
+	delay: anime.stagger(200, {grid: [2, 3]}),
+	autoplay: false
+})
+
 var anime_smbg = anime({
 	targets: '#sect-smbg .fade-sd',
 	opacity: 1,
@@ -58,18 +68,21 @@ var anime_smbg = anime({
 	marginRight: function(el,i) { return (i%2)?0:'auto' },
 	delay: anime.stagger(120),
 	easing: 'easeOutCubic',
-	autoplay: false
+	autoplay: true
 })
 
 var elems = [{
-	tgt: '#sect-products .fade-up',
+	tgt: '#sect-summary',
+	anime: anime_summary
+},{
+	tgt: '#sect-products .row',
 	anime: anime_products
 },{
-	tgt: '#sect-partners .fade-up',
+	tgt: '#sect-partners .row',
 	anime: anime_partners
 },{
-	tgt: '#sect-smbg .fade-sd',
-	anime: anime_smbg
+	tgt: '#sect-projects .row',
+	anime: anime_projects
 }]
 
 function scrollspy() {

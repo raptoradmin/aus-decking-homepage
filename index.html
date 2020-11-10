@@ -7,13 +7,17 @@
 
 	<!-- Preloads -->
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Cabin:wght@400;500;700&display=swap" as="style">
+	<link rel="preload" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" as="script">
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" as="script">
 
 	<!-- Styles -->
 	<link rel="icon" type="image/png" href="img/logo.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Cabin:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="css/parallax-card.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body>
 
@@ -28,7 +32,7 @@
 
 	<div class="collapse navbar-collapse" id="navbarsExample05">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
@@ -53,7 +57,7 @@
 		<!-- <form class="form-inline my-2 my-md-0">
 			<input class="form-control" type="text" placeholder="Search">
 		</form> -->
-		<div class="px-3 py-1 text-center" style="background:#ddd;border-radius:5px;">
+		<div class="px-3 py-1 text-center" style="background:#d6ecfa;border-radius:5px;">
 			<svg width="1.6em" height="2em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="#33A1EA" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg>
 			<a class="my-2 text-dark lead" href="" style="vertical-align:top"><b>(866) 497-2738</b></a>
 		</div>
@@ -84,7 +88,7 @@
 					<div class="container px-3">
 						<h1 class="text-impact">Experienced</h1>
 						<hr><br>
-						<p>AUS Decking has more than 30 years of experience in underlayment</p>
+						<p>AUS Decking has more than 40 years of experience in underlayment</p>
 					</div>
 				</div>
 			</div>
@@ -118,21 +122,68 @@
 	</div>
 </section>
 
-<section id="sect-service" class="bg-white">
+<section id="sect-summary" class="bg-light py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+
+				<div class="card-smbg bg-white stagger fade-rt">
+					<div class="card-smbg-img">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.997 18h-11.995l-.002-.623c0-1.259.1-1.986 1.588-2.33 1.684-.389 3.344-.736 2.545-2.209-2.366-4.363-.674-6.838 1.866-6.838 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.072 1.589 2.333l-.002.619zm4.811-2.214c-1.29-.298-2.49-.559-1.909-1.657 1.769-3.342.469-5.129-1.4-5.129-1.265 0-2.248.817-2.248 2.324 0 3.903 2.268 1.77 2.246 6.676h4.501l.002-.463c0-.946-.074-1.493-1.192-1.751zm-22.806 2.214h4.501c-.021-4.906 2.246-2.772 2.246-6.676 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.619 1.359-1.909 1.657-1.119.258-1.193.805-1.193 1.751l.002.463z"/></svg>
+						<span>1</span>
+					</div>
+					<div class="card-smbg-text">
+						<h5 class="mb-1">Experienced Team</h5>
+						<p>Our team has over 40 years of experience in decking and underlayment.</p>
+					</div>
+				</div>
+
+				<div class="card-smbg bg-white stagger fade-rt">
+					<div class="card-smbg-img">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 19.007c0-3.167-1.409-6.771-2.835-9.301l-.006-.01-.014-.026c-.732-1.392-1.914-3.052-3.619-4.757-2.976-2.976-5.476-3.912-6.785-3.913-.413 0-.708.094-.859.245l-.654.654c-1.898-.236-3.42.105-4.294.982-.876.875-1.164 2.159-.792 3.524.242.893.807 1.891 1.752 2.836.867.867 2.062 1.684 3.615 2.327.488-.839 1.654-1.019 2.359-.315.586.586.584 1.533-.002 2.119s-1.533.589-2.121 0c-.229-.229-.366-.515-.416-.812-1.646-.657-3.066-1.534-4.144-2.612-.728-.728-1.289-1.528-1.664-2.349l-2.835 2.832c-.445.447-.685 1.064-.686 1.82.001 1.635 1.122 3.915 3.714 6.506 2.764 2.764 5.58 4.243 7.431 4.243.649 0 1.181-.195 1.548-.562l8.086-8.079c.911.875-.777 3.541-.777 4.65 0 1.104.896 1.999 2 1.998 1.104 0 1.998-.895 1.998-2zm-18.912-12.974c-.236-.978-.05-1.845.554-2.444.526-.53 1.471-.791 2.656-.761l-3.21 3.205zm9.138 2.341l-.03-.029c-1.29-1.291-3.802-4.354-3.095-5.062.715-.715 3.488 1.521 5.062 3.095.862.863 2.088 2.248 2.938 3.459-1.718-1.073-3.493-1.469-4.875-1.463zm-3.875 12.348c-.547-.082-1.5-.547-1.9-.928l7.086-7.086c.351.37 1.264.931 1.753 1.075l-6.939 6.939z"/></svg>
+						<span>2</span>
+					</div>
+					<div class="card-smbg-text">
+						<h5 class="mb-1">Premium Materials</h5>
+						<p>AUS is licensed to use a diverse selecion of quality materials for any flooring project.</p>
+					</div>
+				</div>
+
+				<div class="card-smbg bg-white stagger fade-rt">
+					<div class="card-smbg-img">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 18.614c.314.229.383.671.15.984l-.807 1.092c-.215.294-.682.374-.986.151-.314-.231-.383-.672-.152-.986l.809-1.092c.229-.31.67-.382.986-.149zm-4.929-1.046l.807-1.087c.23-.314.164-.755-.152-.987-.316-.232-.756-.163-.986.151l-.806 1.088c-.23.313-.163.756.151.987.298.218.768.146.986-.152zm2.516.158l-.805 1.086c-.231.315-.162.757.151.988.301.221.77.145.987-.151l.805-1.088c.231-.313.163-.755-.151-.987-.313-.23-.753-.163-.987.152zm3.563 2.117c-.128.302-.472.726-.707 1.044.155.08.309.113.451.113.542 0 .902-.511.415-.998l-.159-.159zm-4.986-3.157l-.812 1.096c-.23.314-.157.746.156.978.308.225.768.15.981-.143l.812-1.097c.232-.312.163-.755-.152-.986-.315-.23-.755-.161-.985.152zm12.746-.811l2.938-.781-1.583-6.094-2.979.896 1.624 5.979zm-2.482-5.322c-1.453.106-2.834-.429-4.351-1.212-.334-.172-.719-.312-1.095-.312-.346 0-.685.119-.969.441-1.024 1.161-1.619 2.187-2.839 2.898-.601.351.104 1.45 1.396.999.658-.231 1.55-.827 2.277-1.413.572-.461.914-.394 1.41.102.928.929 4.053 4.013 4.053 4.013.483-.298.95-.539 1.413-.746l-1.295-4.77zm-14.018-.657l-2.979-.896-1.583 6.094 2.938.781 1.624-5.979zm13.406 7.126c-.484-.535-3.737-3.733-4.315-4.31-.981.736-2.273 1.761-3.521 1.761-.943 0-1.752-.557-1.968-1.354-.173-.635.093-1.285.66-1.616.71-.414 1.181-.981 1.755-1.691-1.754-1.108-3.25.692-5.149.709l-1.273 4.685c.556.132 1.04.272 1.489.441l.44-.595c.792-1.081 2.444-.857 2.95.351.64.056 1.186.469 1.424 1.04.619.054 1.174.447 1.422 1.039.936.081 1.7.93 1.53 1.972l.654.654c.275.276.723.275.997 0 .276-.276.276-.723 0-.999l-1.264-1.265c-.069-.069-.069-.183.003-.252.069-.066.179-.065.247.002l1.523 1.524c.275.276.723.276.998 0 .276-.276.276-.722 0-.998l-1.875-1.876c-.072-.071-.069-.188.006-.255.069-.063.178-.062.243.005l2.025 2.025c.275.276.723.276.998 0 .276-.275.276-.721.001-.997zm-7.386-14.022l-.984.174.521 2.954.984-.174-.521-2.954zm3.82.174l-.984-.174-.521 2.954.986.174.519-2.954zm3.598 1.228l-.867-.5-1.5 2.598.867.5 1.5-2.598zm-11.133-.5l-.867.5 1.5 2.598.867-.5-1.5-2.598z"/></svg>
+						<span>3</span>
+					</div>
+					<div class="card-smbg-text">
+						<h5 class="mb-1">Distinguished Partners</h5>
+						<p>We partner with respectable and innovative manufacturers to offer top-shelf products.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<img class="img-fluid" src="img/summary.jpg" style="border-radius:10px;box-shadow: 0px 0px 10px -5px;">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SERVICES -->
+<!-- <section id="sect-service" class="bg-white">
 	<div class="container py-5">
 		<h1 class="mb-4">Over 30 years of experience in underlayment</h1>
 		<p class="lead">AUS provides premier Gyp-Crete, sound-mat, concrete, waterproofing, and deck repair services that are guaranteed to meet customer’s satisfaction.</p>
 		<p class="lead">In an ever changing industry, Builders, Architects, and Home Owners can rest assured that AUS Decking is up to date with the latest requirements of application and safety guidelines. With over three decades of service in the Northern California and West Nevada regions, AUS is able to help Residential and Commercial customers transform their projects. Partnered with innovative manufacturers, Maxxon Corporation, Pli-Dek Systems and Tremco, AUS can offer mutually beneficial packaged scopes of work and create new, value engineered systems.</p>
 	</div>
-</section>
+</section> -->
 
-<section id="sect-products" class="bg-light">
+<!-- PRODUCTS (with zoom) -->
+<!-- <section id="sect-products" class="bg-light">
 	<div class="container py-5">
 		<div class="row">
 
 			<div class="col-md-3 my-3 fade-up">
 				<div class="card h-100 text-center card-hover">
-					<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bezier" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/><path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/></svg> -->
 					<img class="card-image-top" src="img/srv-concrete.jpg" height="200">
 					<div class="card-body">
 						<h5 class="card-title">Gypsum Concrete</h5>
@@ -143,7 +194,6 @@
 
 			<div class="col-md-3 my-3 fade-up">
 				<div class="card h-100 text-center card-hover">
-					<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/><path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg> -->
 					<img class="card-image-top" src="img/srv-acoustimat.jpg" height="200">
 					<div class="card-body">
 						<h5 class="card-title">Sound Control</h5>
@@ -154,7 +204,6 @@
 
 			<div class="col-md-3 my-3 fade-up">
 				<div class="card h-100 text-center card-hover">
-					<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layers-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-4.578 2.441a.5.5 0 0 1-.47 0L3.188 8z"/><path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"/></svg> -->
 					<img class="card-image-top" src="img/srv-topping.jpg" height="200">
 					<div class="card-body">
 						<h5 class="card-title">Concrete Topping</h5>
@@ -165,7 +214,6 @@
 
 			<div class="col-md-3 my-3 fade-up">
 				<div class="card h-100 text-center card-hover">
-					<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-droplet-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/><path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/></svg> -->
 					<img class="card-image-top" src="img/srv-finish.jpg" height="200">
 					<div class="card-body">
 						<h5 class="card-title">Specialty Finishes</h5>
@@ -175,17 +223,99 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<section class="jumbotron parallax-window text-light text-center my-0 py-10" data-parallax="scroll" data-image-src="img/IMG_0002.jpg">
-	<div class="container py-5">
-		<h1 class="my-5 text-impact">More than 1 million cubic feet of Gyp-Crete poured</h1>
+<!-- PRODUCTS -->
+<section id="sect-products" class="bg-white my-5">
+	<div class="container">
+		<h1 class="mb-4 text-center">Our <span class="text-primary">Products</span></h1>
+		<p class="text-center text-synopsis mb-3">AUS provides premier Gyp-Crete, Acousti-mat, concrete, waterproofing, and deck repair services that are guaranteed to meet customers' satisfaction. In an ever changing industry, out customers can rest assured that AUS Decking is up-to-date with the latest application and safety guidelines.</p>
+
+		<div class="row">
+
+			<div class="col-md-3 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/srv-concrete.jpg')">
+						<div class="parallax-card-body">
+							<h5 class="card-title text-light">Gypsum Concrete</h5>
+							<hr>
+						</div>
+					</div>
+					<div class="back">
+						<div class="parallax-card-body">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bezier" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/><path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/></svg>
+							<p class="card-text">Gypsum concrete floor underlayment provides improved sound performance, fire resistance and resilient surfaces for floor coverings.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/srv-acoustimat.jpg')">
+						<div class="parallax-card-body">
+							<h5 class="card-title text-light">Sound Control</h5>
+							<hr>
+						</div>
+					</div>
+					<div class="back">
+						<div class="parallax-card-body">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/><path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg>
+							<p class="card-text">AUS offers sound control mats with low profile and high sound transmission class for economical solutions to newest innovations.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front bg-opaque" style="background: url('img/srv-topping.jpg')">
+						<div class="parallax-card-body">
+							<h5 class="card-title text-light">Concrete Topping</h5>
+							<hr>
+						</div>
+					</div>
+					<div class="back">
+						<div class="parallax-card-body">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layers-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-4.578 2.441a.5.5 0 0 1-.47 0L3.188 8z"/><path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"/></svg>
+							<p class="card-text">Enhance the look and value of dull existing concrete at an affordable price, excellent for reconstruction and tenant-improvements</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/srv-finish.jpg')">
+						<div class="parallax-card-body">
+							<h5 class="card-title text-light">Specialty Finishes</h5>
+							<hr>
+						</div>
+					</div>
+					<div class="back">
+						<div class="parallax-card-body">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-droplet-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/><path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/></svg>
+							<p class="card-text">We offer superior specialty coatings that are durable and long lasting to provide you a waterproofing barrier that repels water and keeps moisture out of your building.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </section>
 
-<section id="sect-partners" class="mb-5">
+<section class="jumbotron parallax-window text-light text-center my-0 py-10" data-parallax="scroll" data-image-src="img/IMG_0007.jpg">
 	<div class="container py-5">
-		<h1 class="mb-4">Our Partners</h1>
+		<h1 class="my-5 text-impact">More than 5 million cubic feet of Gyp-Crete poured</h1>
+	</div>
+</section>
+
+<!-- PARTNERS -->
+<section id="sect-partners" class="bg-light py-5">
+	<div class="container">
+		<h1 class="mb-4 text-center">Our <span class="text-primary">Partners</span></h1>
+		<p class="text-center text-synopsis mb-3">Partnered with innovative manufacturers, AUS can offer mutually beneficial, packaged scopes of work to help residential and commercial customers transform their projects.</p>
 		<div class="row">
 
 			<div class="col-md-4 my-3 fade-up">
@@ -224,7 +354,96 @@
 	</div>
 </section>
 
-<section id="sect-smbg" class="bg-light">
+<!-- PROJECTS -->
+<section id="sect-projects" class="bg-white my-5">
+	<div class="container">
+		<h1 class="mb-4 text-center">Our <span class="text-primary">Projects</span></h1>
+		<div class="row text-light">
+
+			<div class="col-md-7 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/pj-epic.jpg') top/cover"></div>
+					<div class="back bg-opaque" style="background: url('img/pj-epic.jpg') top/cover">
+						<div class="parallax-card-body text-light">
+							<h5 class="card-title">Epic</h5>
+							<p class="card-text"><i>Sacramento, CA</i></p>
+							<hr>
+							<p class="card-text">Completed January 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/pj-riverview.jpg') center/cover"></div>
+					<div class="back bg-opaque" style="background: url('img/pj-riverview.jpg') top/cover">
+						<div class="parallax-card-body">
+							<h5 class="card-title">Riverview</h5>
+							<p class="card-text"><i>San Jose, CA</i></p>
+							<hr>
+							<p class="card-text">Completed January 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row text-light">
+
+			<div class="col-md-4 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/pj-crescent.jpg') center/cover"></div>
+					<div class="back bg-opaque" style="background: url('img/pj-crescent.jpg') top/cover">
+						<div class="parallax-card-body">
+							<h5 class="card-title">Crescent Village</h5>
+							<p class="card-text"><i>Sacramento, CA</i></p>
+							<hr>
+							<p class="card-text">Completed January 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/pj-township.jpg') center/cover"></div>
+					<div class="back bg-opaque" style="background: url('img/pj-township.jpg') top/cover">
+						<div class="parallax-card-body">
+							<h5 class="card-title">Township 9</h5>
+							<p class="card-text"><i>Sacramento, CA</i></p>
+							<hr>
+							<p class="card-text">Completed January 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 my-3 fade-up">
+				<div class="parallax-card">
+					<div class="front" style="background: url('img/pj-mosaic.jpg') right/cover"></div>
+					<div class="back bg-opaque" style="background: url('img/pj-mosaic.jpg') right/cover">
+						<div class="parallax-card-body">
+							<h5 class="card-title">Mosaic Apartments</h5>
+							<p class="card-text"><i>Sacramento, CA</i></p>
+							<hr>
+							<p class="card-text">Completed January 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="jumbotron parallax-window text-light text-center my-0 py-10" data-parallax="scroll" data-image-src="img/IMG_0001.jpg">
+	<div class="container py-5">
+		<h1 class="my-5 text-impact">Over 20 Maxxon Legacy Distributor Awards received</h1>
+	</div>
+</section>
+
+<!-- <section id="sect-smbg" class="bg-light">
 	<div class="container py-5" style="max-width:800px;height:920px;overflow:hidden;">
 		<h2 class="mb-4 text-center">Small Business | Big Grasp</h2>
 		<p class="text-center">Our dedicated team of highly experienced professionals will meet your needs and exceed your expectations!</p>
@@ -288,6 +507,51 @@
 				<p>We are the best in the business and we <b>guarantee</b> our clients will be the most satisfied!</p>
 			</div>
 		</div>
+
+	</div>
+</section> -->
+
+<!-- CONTACT FORM -->
+<section id="sect-contact" class="bg-light py-5">
+	<div class="container col-md-8 col-offset-md-2">
+
+		<h1 class="mb-4 text-center">Request a <span class="text-primary">Quote</span></h1>
+		<p class="text-center">Tell us the details of your project, and our estimators will get back to you within 24 hours.</p>
+
+		<form method="post" action="#">
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+					<label class="sr-only" for="contactform-fn">First Name</label>
+					<input type="text" class="form-control" id="contactform-fn" name="name" placeholder="First Name" required>
+					<div class="invalid-feedback">Please provide a valid first name</div>
+				</div>
+				<div class="form-group col-sm-6">
+					<label class="sr-only" for="contactform-ln">Last Name</label>
+					<input type="text" class="form-control" id="contactform-ln" name="last-name" placeholder="Last Name" required>
+					<div class="invalid-feedback">Please provide a valid last name</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+					<label class="sr-only" for="contactform-pn">Phone</label>
+					<input type="text" class="form-control" id="contactform-pn" name="phone" placeholder="Phone" required>
+					<div class="invalid-feedback">Please provide a valid phone number</div>
+				</div>
+				<div class="form-group col-sm-6">
+					<label class="sr-only" for="contactform-em">E-mail</label>
+					<input type="text" class="form-control" id="contactform-em" name="email" placeholder="E-mail" required>
+					<div class="invalid-feedback">Please provide a valid email address</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-12">
+					<label class="sr-only" for="contactform-mg">Message</label>
+					<textarea class="form-control" id="contactform-mg" name="message" placeholder="Message" rows="5" required></textarea>
+					<div class="invalid-feedback">Please provide a valid message</div>
+				</div>
+			</div>
+			<button class="btn btn-primary">Send</button>
+		</form>
 
 	</div>
 </section>
