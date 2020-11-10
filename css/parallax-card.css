@@ -3,7 +3,7 @@
 	-webkit-transform-style: preserve-3d;
 	perspective: 1000px;
 	-webkit-perspective: 1000px;
-	z-index: 100;
+	/*z-index: 100;*/
 }
 
 .parallax-card hr {

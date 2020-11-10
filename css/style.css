@@ -28,6 +28,7 @@ a {
 
 #sect-nav {
 	box-shadow: 0px 0px 10px 0px;
+	z-index: 99;
 }
 #CarHeader {
 	display: none;
