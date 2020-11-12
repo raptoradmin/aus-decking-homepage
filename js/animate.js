@@ -10,6 +10,7 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
 	scrollspy()
+	videospy()
 })
 
 // var anime_nav = anime({
@@ -57,6 +58,7 @@ var anime_projects = anime({
 	top: 0,
 	opacity: 1,
 	delay: anime.stagger(200, {grid: [2, 3]}),
+	easing: 'easeOutCubic',
 	autoplay: false
 })
 
@@ -91,4 +93,11 @@ function scrollspy() {
 			el.anime.play()
 		}
 	})
+}
+
+function videospy() {
+	tgt =  $('video').get(0)
+	if($(tgt).position().top < $(window).scrollTop()) {
+		tgt.play()
+	}
 }
