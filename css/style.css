@@ -30,6 +30,19 @@ a {
 	box-shadow: 0px 0px 10px 0px;
 	z-index: 99;
 }
+.navbar-brand .navbar-brand-text {
+	display: inline-flex;
+	flex-direction: column;
+	vertical-align: middle;
+}
+.navbar-brand .navbar-brand-h1 {
+	font-weight: 700;
+	font-size: 22px;
+}
+.navbar-brand .navbar-brand-h2 {
+	font-size: 14px;
+}
+
 #CarHeader {
 	display: none;
 }
@@ -50,7 +63,7 @@ a {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background:rgba(33,33,33,0.7);
+	background:rgba(33,33,33,0.6);
 	padding-top: 40vh;
 }
 .carousel-overlay h1 {

@@ -12,13 +12,13 @@ $(window).scroll(function(){
 	scrollspy()
 })
 
-var anime_nav = anime({
-	targets: '#sect-nav',
-	translateY: ['-100%', 0],
-	delay: 1000,
-	duration: 600,
-	easing: 'easeOutCubic'
-})
+// var anime_nav = anime({
+// 	targets: '#sect-nav',
+// 	translateY: ['-100%', 0],
+// 	delay: 1000,
+// 	duration: 600,
+// 	easing: 'easeOutCubic'
+// })
 
 var anime_overlay = anime({
 	targets: '.carousel-overlay *',
