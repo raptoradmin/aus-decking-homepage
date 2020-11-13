@@ -61,6 +61,20 @@ a {
 	font-size: 14px;
 }
 
+/*.jumbotron {
+	position: relative;
+}
+.jumbotron.opaque:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: -1;
+}*/
+
 #CarHeader {
 	display: none;
 }
@@ -100,10 +114,6 @@ a {
 	font-style: italic;
 	max-width: 700px;
 	display: inline-block;
-}
-.parallax-window {
-	background: transparent;
-	background: rgba(33,33,33,0.6);
 }
 
 hr.short {
