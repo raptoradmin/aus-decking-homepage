@@ -11,15 +11,16 @@ $(document).ready(function(){
 $(window).scroll(function(){
 	scrollspy()
 	videospy()
+	navspy()
 })
 
-// var anime_nav = anime({
-// 	targets: '#sect-nav',
-// 	translateY: ['-100%', 0],
-// 	delay: 1000,
-// 	duration: 600,
-// 	easing: 'easeOutCubic'
-// })
+var anime_nav = anime({
+	targets: '#sect-nav',
+	translateY: ['-100%', 0],
+	delay: 1000,
+	duration: 600,
+	easing: 'easeOutCubic'
+})
 
 var anime_overlay = anime({
 	targets: '.carousel-overlay *',
@@ -34,6 +35,14 @@ var anime_summary = anime({
 	opacity: 1,
 	delay: anime.stagger(120),
 	easing: 'spring(1, 80, 12, 1)',
+	autoplay: false
+})
+
+var anime_metrics = anime({
+	targets: '#sect-metrics .fade-up',
+	top: 0,
+	opacity: 1,
+	delay: anime.stagger(120),
 	autoplay: false
 })
 
@@ -77,6 +86,9 @@ var elems = [{
 	tgt: '#sect-summary',
 	anime: anime_summary
 },{
+	tgt: '#sect-metrics',
+	anime: anime_metrics
+},{
 	tgt: '#sect-products .row',
 	anime: anime_products
 },{
@@ -99,5 +111,13 @@ function videospy() {
 	tgt =  $('video').get(0)
 	if($(tgt).position().top < $(window).scrollTop()) {
 		tgt.play()
+	}
+}
+
+function navspy() {
+	if($(window).scrollTop() > 800) {
+		$('#sect-nav').addClass('navbar-opaque')
+	} else {
+		$('#sect-nav').removeClass('navbar-opaque')
 	}
 }

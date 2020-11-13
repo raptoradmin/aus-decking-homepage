@@ -15,6 +15,9 @@ a {
 	font-family: 'Russo One';
 	text-shadow: 0px 5px 10px #000;
 }
+.text-metric {
+	font-size: 64px;
+}
 .text-synopsis {
 	max-width: 800px;
 	margin: auto;
@@ -25,10 +28,23 @@ a {
 	background-color: #33A1EA;
 	border-color: #33A1EA;
 }
+.btn-opaque {
+	background: transparent;
+	color: #fff;
+	border: solid 2px #fff;
+}
+.btn-opaque:hover {
+	background: rgba(255,255,255,0.2);
+	color: inherit;
+}
 
 #sect-nav {
 	box-shadow: 0px 0px 10px 0px;
 	z-index: 99;
+	transition: background 0.4s;
+}
+.navbar-opaque {
+	background: rgba(255,255,255,0.85) !important;
 }
 .navbar-brand .navbar-brand-text {
 	display: inline-flex;
