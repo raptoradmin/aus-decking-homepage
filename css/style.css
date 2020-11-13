@@ -85,7 +85,7 @@ a {
 	padding-top: 40vh;
 }
 .carousel-overlay h1 {
-	font-size: 56px;
+	font-size: 44px;
 }
 .carousel-overlay hr {
 	display: inline-block;
@@ -252,7 +252,7 @@ hr.short {
 
 /* Desktop only styles */
 @media only screen and (min-width: 600px) {
-.carousel-overlay h1 { font-size: 94px }
+.carousel-overlay h1 { font-size: 80px }
 .carousel-overlay p { font-size: 26px }
 
 .card-hover:hover {
