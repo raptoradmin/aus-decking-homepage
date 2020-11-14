@@ -30,7 +30,7 @@
 					backface-visibility: hidden;
 	text-align: center;
 	min-height: 280px;
-	height: auto;
+	height: inherit;
 	border-radius: 10px;
 }
 

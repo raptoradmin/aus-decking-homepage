@@ -249,8 +249,22 @@ hr.short {
 	width: 40px;
 	height: 40px;
 }
+/*.parallax-card > .front,*/
 .parallax-card > .back {
 	background: linear-gradient(30deg, #eee 0%, #cedce7 100%);
+}
+
+ul.checklist {
+	/*list-style: none;*/
+	display: inline-block;
+}
+ul.checklist > li {
+	padding-bottom: 5px;
+}
+ul.checklist > li:before {
+	content: url('../img/check-primary.svg');
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
 [class*="fade-"] {
