@@ -1,0 +1,303 @@
+h1, h2, h3, h4, h5, h6, strong {
+	font-family: 'Cabin';
+}
+a, p {
+	font-family: 'Roboto';
+	font-weight: 300 !important;
+}
+a {
+	color: #33A1EA;
+}
+.text-primary {
+	color: #33A1EA !important;
+}
+.text-impact {
+	font-family: 'Russo One';
+	text-shadow: 0px 5px 10px #000;
+}
+.text-metric {
+	font-size: 64px;
+}
+.text-synopsis {
+	max-width: 800px;
+	margin: auto;
+	font-size: 18px;
+}
+
+.btn-primary {
+	background-color: #33A1EA;
+	border-color: #33A1EA;
+}
+.btn-opaque {
+	background: transparent;
+	color: #fff;
+	border: solid 2px #fff;
+}
+.btn-opaque:hover {
+	background: rgba(255,255,255,0.2);
+	color: inherit;
+}
+
+#sect-nav {
+	box-shadow: 0px 0px 10px 0px;
+	z-index: 99;
+	transition: background 0.4s;
+}
+.navbar-opaque {
+	background: rgba(255,255,255,0.85) !important;
+}
+.navbar-brand .navbar-brand-text {
+	display: inline-flex;
+	flex-direction: column;
+	vertical-align: middle;
+}
+.navbar-brand .navbar-brand-h1 {
+	font-family: 'Russo One';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1em;
+}
+.navbar-brand .navbar-brand-h2 {
+	font-size: 14px;
+}
+
+.opaque-overlay {
+	background:rgba(33,33,33,0.6);
+}
+
+#CarHeader {
+	display: none;
+}
+#sect-carousel, #CarHeader .carousel-item {
+	height: 100vh;
+}
+#CarHeader img {
+	height: 100%;
+	object-fit: cover;
+}
+.carousel-control-prev, 
+.carousel-control-next {
+	width: 70px;
+}
+.carousel-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:rgba(33,33,33,0.6);
+	padding-top: 40vh;
+}
+.carousel-overlay h1 {
+	font-size: 44px;
+}
+.carousel-overlay hr {
+	display: inline-block;
+	width: 100px;
+	height: 3px;
+	background: #33A1EA;
+}
+.carousel-overlay p {
+	font-family: 'Cabin';
+	font-weight: 500;
+	font-size: 20px;
+	font-style: italic;
+	max-width: 700px;
+	display: inline-block;
+}
+
+hr.short {
+	background: #33A1EA;
+	width: 60px;
+	height: 3px;
+}
+
+.card {
+	overflow: hidden;
+}
+.card svg {
+	width: 40px;
+	height: 40px;
+	color: #33A1EA;
+	margin: 20px auto 0;
+}
+.card-image-top {
+	object-fit: cover;
+}
+.card-hover {
+	transition: all 200ms cubic-bezier(0,0,0.3,1);
+}
+
+.card-panel {
+	background: #343a40;
+	background: #000;
+	background: linear-gradient(-30deg, #111, #444, #111);
+	border-radius: 12px;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.card-smbg {
+	margin: 10px auto;
+	border: 1px solid #ddd;
+	overflow: auto;
+	border-radius: 50px 6px 6px 50px;
+	box-shadow: 0px 0px 10px -5px;
+	overflow: hidden;
+}
+#sect-smbg .card-smbg {
+	width: 600px;
+}
+.card-smbg-img {
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	background-color: #33A1EA;
+	border: 3px solid #33A1EA;
+	border-radius: 50%;
+	transition: background 0.15s;
+}
+.card-smbg-img > svg {
+	height: 100%;
+	width: 100%;
+	fill: #fff;
+}
+.card-smbg-img > span {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(0deg);
+	left: 0;
+	right: 0;
+	font-size: 0;
+	font-weight: bold;
+	text-align: center;
+	color: #33A1EA;
+	transition: all 0.2s;
+}
+.card-smbg-text {
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.card-smbg-text > * {
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+.card-fade {
+	height: 300px;
+	margin: 2px;
+	/*border: solid 2px #000;*/
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.card-fade .card-img {
+	object-fit: cover;
+}
+.card-fade .card-img-overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	transform: scale(1.2);
+	transition: all 0.3s;
+}
+.card-fade:hover {
+	cursor: pointer;
+}
+.card-fade:hover .card-img-overlay {
+	opacity: 1;
+	transform: scale(1);
+}
+.card-fade .card-img-overlay:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	height: 70%;
+	background-color: #000;
+	opacity: 0;
+	transition: all 0.3s;
+	z-index: -1;
+}
+.card-fade:hover .card-img-overlay:after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+}
+
+.parallax-card svg {
+	color: #33A1EA;
+	margin-bottom: 10px;
+	width: 40px;
+	height: 40px;
+}
+/*.parallax-card > .front,*/
+.parallax-card > .back {
+	background: linear-gradient(30deg, #eee 0%, #cedce7 100%);
+}
+
+ul.checklist {
+	/*list-style: none;*/
+	display: inline-block;
+}
+ul.checklist > li {
+	padding-bottom: 5px;
+}
+ul.checklist > li:before {
+	content: url('../img/check-primary.svg');
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+[class*="fade-"] {
+	opacity: 0;
+}
+.fade-up {
+	top: 5vh;
+}
+
+/* Desktop only styles */
+@media only screen and (min-width: 600px) {
+.carousel-overlay h1 { font-size: 80px }
+.carousel-overlay p { font-size: 26px }
+
+.card-hover:hover {
+	transform: scale(1.05) translateY(8px);
+	box-shadow: 0px 0px 15px -3px;
+	cursor: pointer;
+}
+
+.card-smbg:hover {
+	cursor: pointer;
+}
+.card-smbg:hover .card-smbg-img {
+	background: #fff;
+}
+.card-smbg:hover span {
+	font-size: 48px;
+	transform: translateY(-50%) rotate(360deg);
+}
+
+/*.card-smbg.stagger:nth-child(1) { margin-right: 50px }
+.card-smbg.stagger:nth-child(2) { margin-left: 25px; margin-right: 25px }
+.card-smbg.stagger:nth-child(3) { margin-left: 50px }*/
+
+}
+
+/* Mobile only styles */
+@media only screen and (max-width: 600px) {
+.card-smbg { width: 100% }
+.card-smbg p { font-size: 14px }
+}
+
+@media only screen and (min-width: 1200px) {
+.container { max-width: 1200px }
+}
