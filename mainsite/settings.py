@@ -63,7 +63,7 @@ TEMPLATES = [
 	},{
 		'BACKEND': 'django.template.backends.django.DjangoTemplates',
 		'DIRS': [],
-		'APP_DIRS': False,
+		'APP_DIRS': True,
 		'OPTIONS': {
 			'context_processors': [
 				'django.template.context_processors.debug',
@@ -128,4 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
 	BASE_DIR / 'static',
+	BASE_DIR / 'products',
 )
+
+MEDIA_ROOT = BASE_DIR / 'products'

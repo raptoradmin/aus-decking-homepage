@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ p.name }}{% endblock %}
+
+{% block body %}
+<section style="padding-top:100px;">
+	<div class="container text-center py-5" style="max-width:700px;">
+		<h2 class="my-4">{{ p.name }} Details</h2>
+		<p>{{ p.description }}</p>
+		<div class="row">
+			<div class="col-md-6">
+				<ul class="list-unstyled checklist text-left">
+					{% for d in p.details %}
+					<li>{{ d }}</li>
+					{% endfor %}
+				</ul>
+				<br>
+				<a href="{{ p.data_sheet }}" target="blank">View Data Sheet</a>
+			</div>
+			<div class="col-md-6">
+				<img class="img-fluid" src="{{ static(p.graphic.url) }}" height="300">
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
