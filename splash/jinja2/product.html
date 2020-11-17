@@ -18,7 +18,9 @@
 				<a href="{{ p.data_sheet }}" target="blank">View Data Sheet</a>
 			</div>
 			<div class="col-md-6">
+				{% if p.graphic %}
 				<img class="img-fluid" src="{{ static(p.graphic.url) }}" height="300">
+				{% endif %}
 			</div>
 		</div>
 	</div>

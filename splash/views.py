@@ -6,7 +6,8 @@ def index(request):
 	return render(request, 'index.html')
 
 def srv_concrete(request):
-	return render(request, 'srv-concrete.html')
+	products = Product.objects.filter(category=1)
+	return render(request, 'srv-concrete.html', {'products':products})
 
 def srv_sound(request):
 	products = Product.objects.filter(category=2)
