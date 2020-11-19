@@ -10,3 +10,6 @@ urlpatterns = [
 	path('product/<slug:slug>', views.product_details, name='product'),
 	path('template', views.test, name='template'),
 ]
+
+handler404 = views.handler404
+handler500 = views.handler500

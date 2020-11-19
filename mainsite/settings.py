@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '87^rlbkbrc3jfdka3l6k&6-&-y^)hxs8w@4n5c-91imz)8m#+l'
+SECRET_KEY = os.getenv('SECRET_KEY', 'supersecretkey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','10.1.10.12']
+ALLOWED_HOSTS = ['10.1.10.12']
 
 
 # Application definition
@@ -83,6 +83,14 @@ WSGI_APPLICATION = 'mainsite.wsgi.application'
 
 DATABASES = {
 	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'aus-decking',
+		'USER': 'raptoritconsultants',
+		'PASSWORD': 'Raptor01',
+		'HOST': 'localhost',
+		'PORT': '3306',
+	},
+	'sqlite': {
 		'ENGINE': 'django.db.backends.sqlite3',
 		'NAME': BASE_DIR / 'db.sqlite3',
 	}
@@ -133,3 +141,13 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = BASE_DIR / 'products'
+
+if os.getenv('DJANGO_ENV') == 'development':
+	from .settings_dev import *
+	DATABASES = {
+		'default': {
+			'ENGINE': 'django.db.backends.sqlite3',
+			'NAME': BASE_DIR / 'db.sqlite3',
+		}
+	}
+		
