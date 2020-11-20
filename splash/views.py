@@ -27,3 +27,10 @@ def product_details(request, slug):
 
 def test(request):
 	return render(request, 'template.html')
+
+## Error handling
+def handler404(request, exception):
+	return render(request, 'handler404.html', status=404)
+
+def handler500(request):
+	return render(request, 'handler500.html', status=500)
