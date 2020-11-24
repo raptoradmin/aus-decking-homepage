@@ -26,7 +26,7 @@ SECRET_KEY = '87^rlbkbrc3jfdka3l6k&6-&-y^)hxs8w@4n5c-91imz)8m#+l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.1.10.12']
+ALLOWED_HOSTS = ['10.1.10.89']
 
 
 # Application definition
@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'mainsite.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'aus-decking',
-		'USER': 'raptoritconsultants',
+		'NAME': 'aus_decking',
+		'USER': 'raptorwebhost',
 		'PASSWORD': 'Raptor01',
 		'HOST': 'localhost',
 		'PORT': '3306',

@@ -1,0 +1,5 @@
+WSGIDaemonProcess aus-process \
+	python-home=/home/raptorwebhost/domains/preview-aus.raptorwebhost.com/public_html/venv-prod \
+	python-path=/home/raptorwebhost/domains/preview-aus.raptorwebhost.com/public_html:/home/raptorwebhost/domains/preview-aus.raptorwebhost.com/public_html/venv-prod/lib/python3.8/site-packages
+WSGIProcessGroup aus-process
+WSGIScriptAlias / home/raptorwebhost/domains/preview-aus.raptorwebhost.com/public_html/mainsite/wsgi.py

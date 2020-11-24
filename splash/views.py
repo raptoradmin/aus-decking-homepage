@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .models import *
 
+import os
+
 # Create your views here.
 def index(request):
 	return render(request, 'index.html')
@@ -26,6 +28,7 @@ def product_details(request, slug):
 	return render(request, 'product.html', {'p':product})
 
 def test(request):
+	print(os.getenv('TEST'))
 	return render(request, 'template.html')
 
 ## Error handling
