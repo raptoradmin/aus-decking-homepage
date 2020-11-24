@@ -28,8 +28,8 @@ def product_details(request, slug):
 	return render(request, 'product.html', {'p':product})
 
 def test(request):
-	print(os.getenv('TEST'))
-	return render(request, 'template.html')
+	data = os.getenv('TEST')
+	return render(request, 'template.html', {'data':data})
 
 ## Error handling
 def handler404(request, exception):
