@@ -26,7 +26,7 @@ SECRET_KEY = '87^rlbkbrc3jfdka3l6k&6-&-y^)hxs8w@4n5c-91imz)8m#+l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.1.10.89']
+ALLOWED_HOSTS = ['preview-aus.raptorwebhost.com', 'localhost']
 
 
 # Application definition
