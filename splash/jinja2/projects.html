@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Specializing in Gyp-Crete, Architectural Concrete Topping, Deck Coating & Waterproofing{% endblock %}
+
+{% block js %}
+<script src="{{ static('js/animate.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	elems = [{
+		tgt: '#sect-partners .row',
+			anime: anime({
+			targets: '#sect-partners .fade-up',
+			top: 0,
+			opacity: 1,
+			delay: anime.stagger(200),
+			autoplay: false
+		})
+	}]
+
+	anime({
+		targets: '#sect-team .fade-up',
+		top: 0,
+		opacity: 1,
+		delay: anime.stagger(100)
+	})
+})
+</script>
+{% endblock %}
+
+{% block body %}
+<section class="jumbotron text-center bg-white" style="margin-top:70px">
+	<h1>Latest <span class="text-primary">Projects</span></h1>
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			{% for p in projects %}
+			<p>{{ p }}</p>
+			{% else %}
+			<p>No projects :(</p>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% endblock %}

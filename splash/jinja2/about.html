@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Specializing in Gyp-Crete, Architectural Concrete Topping, Deck Coating & Waterproofing{% endblock %}
+
+{% block js %}
+<script src="{{ static('js/animate.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	elems = [{
+		tgt: '#sect-partners .row',
+			anime: anime({
+			targets: '#sect-partners .fade-up',
+			top: 0,
+			opacity: 1,
+			delay: anime.stagger(200),
+			autoplay: false
+		})
+	}]
+
+	anime({
+		targets: '#sect-team .fade-up',
+		top: 0,
+		opacity: 1,
+		delay: anime.stagger(100)
+	})
+})
+</script>
+{% endblock %}
+
+{% block body %}
+<section class="jumbotron text-center bg-light" style="margin-top:70px">
+	<h1>Our <span class="text-primary">Mission</span></h1>
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<p class="lead">At AUS Decking, we take pride in assuring the customer’s needs are taken care of as well as properly taking care of our workers. As a family business, our goal is to provide quality work at an affordable price.</p>
+		</div>
+	</div>
+</section>
+
+<section id="sect-team" class="my-5">
+	<div class="container text-center">
+		<h2>We are AUS</h2>
+		<p class="mx-auto" style="max-width:600px">This is our dedicated team who work day-in and day-out together to bring our clients the most advanced and valued engineered underlayment systems.</p>
+
+		<div class="row">
+			{% for t in team %}
+			<div class="col-md-3 my-3">
+				<div class="card h-100 text-left fade-up">
+					<div class="card-body">
+						<img class="img-fluid w-100" src="{{ static(t.url) }}">
+						<div style="background:{{ aus_blue_hex }};height:4px;"></div>
+						<!-- <hr class="short"> -->
+						<p class="card-title mt-3 mb-0">{{ t.name }}</p>
+						<p class="card-text" style="font-size: 14px">{{ t.title }}</p>
+						<a class="d-block" href="#">View Profile</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	
+</section>
+
+{% endblock %}

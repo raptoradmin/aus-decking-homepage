@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Specializing in Gyp-Crete, Architectural Concrete Topping, Deck Coating & Waterproofing{% endblock %}
+
+{% block js %}
+<script src="{{ static('js/animate.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	elems = [{
+		tgt: '#sect-partners .row',
+			anime: anime({
+			targets: '#sect-partners .fade-up',
+			top: 0,
+			opacity: 1,
+			delay: function(el) { return el.offsetLeft/2 },
+			autoplay: false
+		})
+	}]
+
+	anime({
+		targets: '#sect-contact .fade-up',
+		top: 0,
+		opacity: 1,
+		delay: anime.stagger(100)
+	})
+})
+</script>
+{% endblock %}
+
+{% block body %}
+<section id="sect-contact" class="text-center" style="margin-top:70px">
+	<div class="container py-5">
+		<h1 class="mb-4"><span class="text-primary">Contact</span> Us</h1>
+
+		<p>Reach out to our estimators to receive a competitive quote.</p>
+
+		<div class="card-deck mx-auto" style="max-width:900px">
+			<div class="card fade-up">
+				<div class="card-body">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill bi-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg>
+					<h5 class="card-title my-3">Call Us</h5>
+					<a href="tel:18664972738" title="Call us">1 (866) 497-2738</a>
+				</div>
+			</div>
+			<div class="card fade-up">
+				<div class="card-body">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill bi-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg>
+					<h5 class="card-title my-3">Email Us</h5>
+					<a href="mailto:sales@ausdecking.com" title="Email us">sales@ausdecking.com</a>
+				</div>
+			</div>
+			<div class="card fade-up">
+				<div class="card-body">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill bi-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+					<h5 class="card-title my-3">Visit Us</h5>
+					<a href="#" title="Visit us">2999 Promenade St #100,<br>West Sacramento, CA 95691</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}

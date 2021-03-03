@@ -7,6 +7,33 @@ import os
 def index(request):
 	return render(request, 'index.html')
 
+def about_us(request):
+	team = [{
+		'name': 'Eric Meissner',
+		'title': 'President',
+		'url': 'img/team/eric.png'
+	},{
+		'name': 'Peter Kosinski',
+		'title': 'Vice President',
+		'url': 'img/team/peter.png'
+	},{
+		'name': 'Chantai Sircy',
+		'title': 'Vice President of Sales and Marketing',
+		'url': 'img/team/chantai.png'
+	},{
+		'name': 'Matt Rugg',
+		'title': 'Waterproofing Superintendent',
+		'url': 'img/team/matt.png'
+	}]
+	return render(request, 'about.html', {'team':team})
+
+def contact_us(request):
+	return render(request, 'contact.html')
+
+def projects(request):
+	projects = Project.objects.all()
+	return render(request, 'projects.html', {'projects':projects})
+
 def srv_concrete(request):
 	products = Product.objects.filter(category=1)
 	return render(request, 'srv-concrete.html', {'products':products})

@@ -6,10 +6,10 @@ a, p {
 	font-weight: 300 !important;
 }
 a {
-	color: #33A1EA;
+	color: #2767B1;
 }
 .text-primary {
-	color: #33A1EA !important;
+	color: #2767B1 !important;
 }
 .text-impact {
 	font-family: 'Russo One';
@@ -25,8 +25,8 @@ a {
 }
 
 .btn-primary {
-	background-color: #33A1EA;
-	border-color: #33A1EA;
+	background-color: #2767B1;
+	border-color: #2767B1;
 }
 .btn-opaque {
 	background: transparent;
@@ -86,7 +86,7 @@ a {
 	left: 0;
 	right: 0;
 	background:rgba(33,33,33,0.6);
-	padding-top: 40vh;
+	padding-top: 36vh;
 }
 .carousel-overlay h1 {
 	font-size: 44px;
@@ -95,7 +95,7 @@ a {
 	display: inline-block;
 	width: 100px;
 	height: 3px;
-	background: #33A1EA;
+	background: #2767B1;
 }
 .carousel-overlay p {
 	font-family: 'Cabin';
@@ -105,9 +105,12 @@ a {
 	max-width: 700px;
 	display: inline-block;
 }
+.carousel-overlay b {
+	font-weight: 800;
+}
 
 hr.short {
-	background: #33A1EA;
+	background: #2767B1;
 	width: 60px;
 	height: 3px;
 }
@@ -118,7 +121,7 @@ hr.short {
 .card svg {
 	width: 40px;
 	height: 40px;
-	color: #33A1EA;
+	color: #2767B1;
 	margin: 20px auto 0;
 }
 .card-image-top {
@@ -154,8 +157,8 @@ hr.short {
 	height: 100px;
 	width: 100px;
 	padding: 20px;
-	background-color: #33A1EA;
-	border: 3px solid #33A1EA;
+	background-color: #2767B1;
+	border: 3px solid #2767B1;
 	border-radius: 50%;
 	transition: background 0.15s;
 }
@@ -234,7 +237,7 @@ hr.short {
 }
 
 .parallax-card svg {
-	color: #33A1EA;
+	color: #2767B1;
 	margin-bottom: 10px;
 	width: 40px;
 	height: 40px;
@@ -266,7 +269,7 @@ ul.checklist > li:before {
 
 /* Desktop only styles */
 @media only screen and (min-width: 600px) {
-.carousel-overlay h1 { font-size: 80px }
+.carousel-overlay h1 { font-size: 68px }
 .carousel-overlay p { font-size: 26px }
 
 .card-hover:hover {

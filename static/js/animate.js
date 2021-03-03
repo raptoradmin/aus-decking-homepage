@@ -10,10 +10,12 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
 	scrollspy()
-	videospy()
 	navspy()
 })
 
+var elems = []
+
+/*
 var anime_nav = anime({
 	targets: '#sect-nav',
 	translateY: ['-100%', 0],
@@ -98,6 +100,7 @@ var elems = [{
 	tgt: '#sect-projects .row',
 	anime: anime_projects
 }]
+*/
 
 function scrollspy() {
 	elems.forEach(function(el){

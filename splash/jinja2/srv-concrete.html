@@ -2,8 +2,25 @@
 
 {% block title %}Sound Control Mats{% endblock %}
 
-{% block body %}
+{% block js %}
+<script src="{{ static('js/animate.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	elems = [{
+		tgt: '#sect-partners .row',
+			anime: anime({
+			targets: '#sect-partners .fade-up',
+			top: 0,
+			opacity: 1,
+			delay: function(el) { return el.offsetLeft/2 },
+			autoplay: false
+		})
+	}]
+})
+</script>
+{% endblock %}
 
+{% block body %}
 <section id="sect-header" style="background: url('{{ static('img/banner-concrete.jpg') }}') center/cover">
 	<div class="jumbotron opaque-overlay" style="padding-top:120px">
 		<div class="container text-light my-5">
