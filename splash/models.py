@@ -1,6 +1,9 @@
 import uuid
 import json
+from django.core.files.storage import FileSystemStorage
 from django.db import models
+
+fs = FileSystemStorage()
 
 PRODUCT_CATEGORIES = [
 	(1, 'Concrete'),
@@ -38,5 +41,5 @@ class Project(models.Model):
 class ProjectImage(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	project = models.ForeignKey(Project, blank=True, null=True, on_delete=models.SET_NULL, related_name='images')
-	image = models.ImageField(upload_to='uploads/')
+	image = models.ImageField(upload_to='prod')
 	alt = models.TextField(blank=True, null=True)

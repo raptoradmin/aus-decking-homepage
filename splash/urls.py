@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path
 from . import views
 
@@ -12,7 +14,7 @@ urlpatterns = [
 	path('specialty-finishes', views.srv_finish, name='srv_finish'),
 	path('product/<slug:slug>', views.product_details, name='product'),
 	path('template', views.test, name='template'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = views.handler404
 handler500 = views.handler500
